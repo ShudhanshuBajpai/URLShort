@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h3 {
+  color: #22223b;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(34, 34, 59, 0.08), 0 1.5px 3px rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 36px 32px 32px 32px;
+  max-width: 470px;
+  min-height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+input[type="url"],
+input[type="text"] {
+  padding: 12px 0px;
+  border: 1.5px solid #e0e1e6;
+  border-radius: 8px;
+  font-size: 1em;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: #f8f9fa;
+  transition: border 0.2s;
+}
+
+input[type="url"]:focus,
+input[type="text"]:focus {
+  border: 1.5px solid #5a4ff3;
+  outline: none;
+  background: #fff;
+}
+
+button {
+  display: block;
+  margin: 18px auto 0 auto;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #5a4ff3 0%, #6a89f7 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, opacity 0.2s;
+  width: 70%;
+  max-width: 150px;
+}
+
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.short-url-box {
+  margin-top: 18px;
+  background: #f1f3f7;
+  border-radius: 8px;
+  padding: 14px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.short-url-box input {
+  background: none;
+  border: none;
+  font-size: 1.08em;
+  color: #22223b;
+  width: 100%;
+  outline: none;
+}
+
+a {
+  color: #5a4ff3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.helper-text {
+  color: #070707;
+  font-size: 0.98em;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 22px 8px 20px 8px;
+    max-width: 98vw;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+}

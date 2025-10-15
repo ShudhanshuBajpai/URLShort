@@ -1,0 +1,8 @@
+{
+  "rewriteRule" : [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
